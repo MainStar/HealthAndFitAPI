@@ -1,0 +1,17 @@
+//var xhr = new XmlHttpRequest();
+//xhr.open(method, url);
+//xht.setRequestHeader("Content-Type", "application/json");
+//xhr.send(user);
+
+{
+  "user_name":"test name 1",
+  "second_name":"test second name 1",
+  "email":"test1@test.com",
+  "password":"password1",
+  "sex":"male",
+  "birthday_data":"1",
+  "height":"",
+  "current_weight":"100",
+  "target_weight":"80",
+  "trainings":""
+}
