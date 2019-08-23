@@ -1,0 +1,118 @@
+2019-08-23T18:30:48.324311+00:00 heroku[web.1]: State changed from crashed to starting
+        2019-08-23T18:30:52.832869+00:00 heroku[web.1]: Starting process with command `java -jar target/dependency/webapp-runner.jar --port 10909 target/*.war`
+        2019-08-23T18:30:53.000000+00:00 app[api]: Build succeeded
+        2019-08-23T18:30:54.365384+00:00 app[web.1]: Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+        2019-08-23T18:30:54.369461+00:00 app[web.1]: Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+        2019-08-23T18:30:54.916429+00:00 app[web.1]: Expanding healthAndFitAPI-1.0-SNAPSHOT.war into /app/target/tomcat.10909/webapps/expanded
+        2019-08-23T18:30:54.916469+00:00 app[web.1]: Adding Context  for /app/target/tomcat.10909/webapps/expanded
+        2019-08-23T18:30:55.247695+00:00 app[web.1]: Aug 23, 2019 6:30:55 PM org.apache.coyote.AbstractProtocol init
+        2019-08-23T18:30:55.247706+00:00 app[web.1]: INFO: Initializing ProtocolHandler ["http-nio-10909"]
+        2019-08-23T18:30:55.263806+00:00 app[web.1]: Aug 23, 2019 6:30:55 PM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+        2019-08-23T18:30:55.263808+00:00 app[web.1]: INFO: Using a shared selector for servlet write/read
+        2019-08-23T18:30:55.266748+00:00 app[web.1]: Aug 23, 2019 6:30:55 PM org.apache.catalina.core.StandardService startInternal
+        2019-08-23T18:30:55.266750+00:00 app[web.1]: INFO: Starting service Tomcat
+        2019-08-23T18:30:55.267934+00:00 app[web.1]: Aug 23, 2019 6:30:55 PM org.apache.catalina.core.StandardEngine startInternal
+        2019-08-23T18:30:55.267936+00:00 app[web.1]: INFO: Starting Servlet Engine: Apache Tomcat/8.0.30
+        2019-08-23T18:30:55.522937+00:00 app[web.1]: Aug 23, 2019 6:30:55 PM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+        2019-08-23T18:30:55.522953+00:00 app[web.1]: INFO: No global web.xml found
+        2019-08-23T18:30:57.662770+00:00 app[web.1]: Aug 23, 2019 6:30:57 PM org.apache.catalina.startup.ContextConfig processAnnotationsJar
+        2019-08-23T18:30:57.662786+00:00 app[web.1]: SEVERE: Unable to process Jar entry [module-info.class] from Jar [jar:file:/app/target/tomcat.10909/webapps/expanded/WEB-INF/lib/log4j-api-2.10.0.jar!/] for annotations
+        2019-08-23T18:30:57.662789+00:00 app[web.1]: org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+        2019-08-23T18:30:57.662790+00:00 app[web.1]: 	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+        2019-08-23T18:30:57.662791+00:00 app[web.1]: 	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+    2019-08-23T18:30:57.662792+00:00 app[web.1]: 	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+    2019-08-23T18:30:57.662794+00:00 app[web.1]: 	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+    2019-08-23T18:30:57.662795+00:00 app[web.1]: 	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2011)
+    2019-08-23T18:30:57.662797+00:00 app[web.1]: 	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1961)
+    2019-08-23T18:30:57.662798+00:00 app[web.1]: 	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1936)
+    2019-08-23T18:30:57.662799+00:00 app[web.1]: 	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1897)
+    2019-08-23T18:30:57.662800+00:00 app[web.1]: 	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1149)
+    2019-08-23T18:30:57.662801+00:00 app[web.1]: 	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+    2019-08-23T18:30:57.662802+00:00 app[web.1]: 	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+    2019-08-23T18:30:57.662803+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+    2019-08-23T18:30:57.662804+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+    2019-08-23T18:30:57.662805+00:00 app[web.1]: 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+    2019-08-23T18:30:57.662807+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+    2019-08-23T18:30:57.662808+00:00 app[web.1]: 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408)
+    2019-08-23T18:30:57.662809+00:00 app[web.1]: 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398)
+    2019-08-23T18:30:57.662811+00:00 app[web.1]: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+    2019-08-23T18:30:57.662812+00:00 app[web.1]: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+    2019-08-23T18:30:57.662813+00:00 app[web.1]: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    2019-08-23T18:30:57.662814+00:00 app[web.1]: 	at java.lang.Thread.run(Thread.java:748)
+    2019-08-23T18:30:57.662815+00:00 app[web.1]:
+    2019-08-23T18:30:59.043979+00:00 app[web.1]: Aug 23, 2019 6:30:59 PM org.apache.jasper.servlet.TldScanner scanJars
+    2019-08-23T18:30:59.043993+00:00 app[web.1]: INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+    2019-08-23T18:30:59.075114+00:00 app[web.1]: Aug 23, 2019 6:30:59 PM org.apache.catalina.core.ContainerBase startInternal
+    2019-08-23T18:30:59.075116+00:00 app[web.1]: SEVERE: A child container failed during start
+    2019-08-23T18:30:59.075118+00:00 app[web.1]: java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[]]
+    2019-08-23T18:30:59.075120+00:00 app[web.1]: 	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+    2019-08-23T18:30:59.075122+00:00 app[web.1]: 	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+    2019-08-23T18:30:59.075126+00:00 app[web.1]: 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
+    2019-08-23T18:30:59.075127+00:00 app[web.1]: 	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871)
+    2019-08-23T18:30:59.075128+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+    2019-08-23T18:30:59.075130+00:00 app[web.1]: 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408)
+    2019-08-23T18:30:59.075131+00:00 app[web.1]: 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398)
+    2019-08-23T18:30:59.075132+00:00 app[web.1]: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+    2019-08-23T18:30:59.075133+00:00 app[web.1]: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+    2019-08-23T18:30:59.075134+00:00 app[web.1]: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    2019-08-23T18:30:59.075135+00:00 app[web.1]: 	at java.lang.Thread.run(Thread.java:748)
+    2019-08-23T18:30:59.075137+00:00 app[web.1]: Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].StandardContext[]]
+    2019-08-23T18:30:59.075138+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+    2019-08-23T18:30:59.075139+00:00 app[web.1]: 	... 6 more
+    2019-08-23T18:30:59.075141+00:00 app[web.1]: Caused by: java.lang.NoSuchMethodError: org.apache.tomcat.util.res.StringManager.getManager(Ljava/lang/Class;)Lorg/apache/tomcat/util/res/StringManager;
+    2019-08-23T18:30:59.075142+00:00 app[web.1]: 	at org.apache.tomcat.websocket.WsWebSocketContainer.<clinit>(WsWebSocketContainer.java:79)
+        2019-08-23T18:30:59.075143+00:00 app[web.1]: 	at org.apache.tomcat.websocket.server.WsSci.init(WsSci.java:131)
+        2019-08-23T18:30:59.075144+00:00 app[web.1]: 	at org.apache.tomcat.websocket.server.WsSci.onStartup(WsSci.java:47)
+        2019-08-23T18:30:59.075145+00:00 app[web.1]: 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5244)
+        2019-08-23T18:30:59.075146+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+        2019-08-23T18:30:59.075146+00:00 app[web.1]: 	... 6 more
+        2019-08-23T18:30:59.075147+00:00 app[web.1]:
+        2019-08-23T18:30:59.076815+00:00 app[web.1]: Aug 23, 2019 6:30:59 PM org.apache.catalina.core.ContainerBase startInternal
+        2019-08-23T18:30:59.076817+00:00 app[web.1]: SEVERE: A child container failed during start
+        2019-08-23T18:30:59.076819+00:00 app[web.1]: java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+        2019-08-23T18:30:59.076820+00:00 app[web.1]: 	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+        2019-08-23T18:30:59.076822+00:00 app[web.1]: 	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+        2019-08-23T18:30:59.076823+00:00 app[web.1]: 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
+        2019-08-23T18:30:59.076824+00:00 app[web.1]: 	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+        2019-08-23T18:30:59.076826+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+        2019-08-23T18:30:59.076827+00:00 app[web.1]: 	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441)
+        2019-08-23T18:30:59.076828+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+        2019-08-23T18:30:59.076830+00:00 app[web.1]: 	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769)
+        2019-08-23T18:30:59.076831+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+        2019-08-23T18:30:59.076832+00:00 app[web.1]: 	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344)
+        2019-08-23T18:30:59.076833+00:00 app[web.1]: 	at webapp.runner.launch.Main.main(Main.java:261)
+        2019-08-23T18:30:59.076835+00:00 app[web.1]: Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+        2019-08-23T18:30:59.076836+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+        2019-08-23T18:30:59.076838+00:00 app[web.1]: 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408)
+        2019-08-23T18:30:59.076839+00:00 app[web.1]: 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398)
+        2019-08-23T18:30:59.076840+00:00 app[web.1]: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+        2019-08-23T18:30:59.076842+00:00 app[web.1]: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        2019-08-23T18:30:59.076843+00:00 app[web.1]: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        2019-08-23T18:30:59.076844+00:00 app[web.1]: 	at java.lang.Thread.run(Thread.java:748)
+        2019-08-23T18:30:59.076846+00:00 app[web.1]: Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+        2019-08-23T18:30:59.076847+00:00 app[web.1]: 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924)
+        2019-08-23T18:30:59.076848+00:00 app[web.1]: 	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871)
+        2019-08-23T18:30:59.076849+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+        2019-08-23T18:30:59.076851+00:00 app[web.1]: 	... 6 more
+        2019-08-23T18:30:59.076852+00:00 app[web.1]:
+        2019-08-23T18:30:59.077360+00:00 app[web.1]: Exception in thread "main" org.apache.catalina.LifecycleException: Failed to start component [StandardServer[-1]]
+        2019-08-23T18:30:59.077463+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+        2019-08-23T18:30:59.077522+00:00 app[web.1]: 	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:344)
+        2019-08-23T18:30:59.077583+00:00 app[web.1]: 	at webapp.runner.launch.Main.main(Main.java:261)
+        2019-08-23T18:30:59.077682+00:00 app[web.1]: Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Tomcat]]
+        2019-08-23T18:30:59.077746+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+        2019-08-23T18:30:59.077809+00:00 app[web.1]: 	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:769)
+        2019-08-23T18:30:59.077873+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+        2019-08-23T18:30:59.077930+00:00 app[web.1]: 	... 2 more
+        2019-08-23T18:30:59.078053+00:00 app[web.1]: Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat]]
+        2019-08-23T18:30:59.078151+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+        2019-08-23T18:30:59.078153+00:00 app[web.1]: 	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441)
+        2019-08-23T18:30:59.078227+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+        2019-08-23T18:30:59.078317+00:00 app[web.1]: 	... 4 more
+        2019-08-23T18:30:59.078444+00:00 app[web.1]: Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+        2019-08-23T18:30:59.078517+00:00 app[web.1]: 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924)
+        2019-08-23T18:30:59.078633+00:00 app[web.1]: 	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+        2019-08-23T18:30:59.078635+00:00 app[web.1]: 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+        2019-08-23T18:30:59.078673+00:00 app[web.1]: 	... 6 more
+        2019-08-23T18:30:59.361522+00:00 heroku[web.1]: State changed from starting to crashed
+        2019-08-23T18:30:59.344989+00:00 heroku[web.1]: Process exited with status 1
